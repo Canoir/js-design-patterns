@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="notModule.js"></script>
+    <script src="module.js" type="module"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- So notModule.js functions, variables and etc... are available in window object, -->
+    <!-- But in module.js with type="module", functions and variables and etc... are encapsulated -->
+    <!-- And only available via import/export -->
+    <script type="module">
+      "use strict";
+      import { exportedModuleMethod } from "./module.js";
+
+      //   moduleMethod?.(); // This method will produce error!
+
+      exportedModuleMethod?.();
+
+      notModuleMethod();
+    </script>
+  </body>
+</html>
