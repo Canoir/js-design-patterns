@@ -8,3 +8,4 @@ Udemy Design Patterns Projects
 |  2  | Singleton Pattern  | For making single instance and use it globally                         | src/patterns/singelton  |
 |  3  | Proxy Pattern      | For validate and control object set and get properties                 | src/patterns/proxy      |
 |  4  | Observable Pattern | For notify subscribers of a singleton for data change                  | src/patterns/observable |
+|  5  | Factory Pattern    | For making object template out of functions                            | src/patterns/factory    |
